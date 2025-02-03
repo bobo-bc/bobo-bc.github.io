@@ -16,7 +16,7 @@ timezone:
 
 title: Meyerwire # the main title
 
-tagline: my homelab experiment # it will display as the subtitle
+tagline: my homelab # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Homelab docker swarm hobby
