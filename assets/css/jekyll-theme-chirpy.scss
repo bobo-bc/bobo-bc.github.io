@@ -1,0 +1,16 @@
+.post img {
+  display: block;
+  margin: 0 auto;
+}
+
+.post img.small {
+  width: 25%;
+}
+
+.post img.medium {
+  width: 50%;
+}
+
+.post img.large {
+  width: 75%;
+}
