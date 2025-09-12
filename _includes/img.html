@@ -1,0 +1,10 @@
+<figure style="text-align: center;">
+  <img src="{{ include.src }}" 
+       alt="{{ include.alt | default: '' }}" 
+       style="width:{{ include.width | default: '100%' }};">
+  {% if include.caption %}
+    <figcaption style="font-size: 0.9em; color: gray;">
+      {{ include.caption }}
+    </figcaption>
+  {% endif %}
+</figure>
