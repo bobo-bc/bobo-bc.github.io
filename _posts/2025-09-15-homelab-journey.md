@@ -1,10 +1,10 @@
-    ---
-    layout: post
-    title: "My HomeLab Journey"
-    date: 2025-09-15 14:30:00 +0800
-    categories: [HomeLab]
-    tags: [Proxmox, K3s, docker]
-    ---
+---
+layout: post
+title: "My HomeLab Journey"
+date: 2025-09-15 14:30:00 +0800
+categories: [HomeLab]
+tags: [Proxmox, K3s, docker]
+---
     
 ## Why homelab
 I have spent most of my working life it IT. Technology moves fast so the only way to keep fresh is to build a lab and play with the new technologies in order to learn and make mistakes in order that you can become functional in the job. 
