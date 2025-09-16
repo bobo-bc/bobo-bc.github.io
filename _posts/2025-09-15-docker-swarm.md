@@ -6,7 +6,7 @@ categories: [HomeLab]
 tags: [Proxmox, docker]
 ---
 ## Intro
-This simplified guide for TuringPi cluster is less windy than the original: TuringPi Docker Swarm and the great guide https://rpi4cluster.com/docker-swarm-intro.
+This simplified guide for TuringPi cluster is less windy than the original: [rip4cluster](https://rpi4cluster.com/docker-swarm-intro).
 
 # Docker Swarm
 Docker Swarm is a native clustering solution for Docker. It lets you run multiple Docker daemons on multiple machines and manage them as a single virtual machine. It allows you to run Docker containers in Highly Available mode, scale them up and down, and run multiple services on the same cluster.
