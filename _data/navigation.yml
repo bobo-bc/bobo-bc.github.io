@@ -1,0 +1,8 @@
+- title: Home
+  url: /
+- title: Posts
+  url: /posts/
+- title: Docker Swarm Guide
+  url: /swarm/
+- title: About
+  url: /about/
