@@ -2,7 +2,7 @@
 layout: post
 title: "Swarm Build"
 date: 2025-09-16 10:30:00 +0800
-categories: [HomeLab]
+categories: [Swarm]
 tags: [docker]
 ---
 
