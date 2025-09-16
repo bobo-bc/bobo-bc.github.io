@@ -2,7 +2,7 @@
 layout: post
 title: "Docker Swarm"
 date: 2025-09-15 15:30:00 +0800
-categories: [HomeLab]
+categories: [Swarm]
 tags: [Proxmox, docker]
 ---
 ## Intro
