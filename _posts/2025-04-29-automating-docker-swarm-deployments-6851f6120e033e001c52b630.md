@@ -53,7 +53,7 @@ bash
     git add docker-compose.yml
     git commit -m "Initial stack configuration"
     git branch -M main
-    git remote add origin https://github.com/yourusername/docker-swarm-stacks.git
+    git remote add origin 
     git push -u origin main
     
 
@@ -67,7 +67,6 @@ bash
 
 1️⃣ Go to **Stacks** → **Add a Stack**. 2️⃣ Choose **Git Repository** as the deployment source. 3️⃣ Enter your **GitHub repository URL**:
 
-    https://github.com/yourusername/docker-swarm-stacks.git
     
 
 4️⃣ Specify the **branch** (`main`) and file (`docker-compose.yml`). 5️⃣ Enter **authentication credentials** if using a private repository.
