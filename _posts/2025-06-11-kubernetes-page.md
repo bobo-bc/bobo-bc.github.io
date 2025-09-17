@@ -28,4 +28,3 @@ I recommend building a docker server to get used to yaml files and provisioning.
 - **Deploying Media Apps on k3s (Sonarr, Radarr, etc.)**
 - **Maintaining Your Cluster**
 
-[View All Kubernetes Project Posts](__GHOST_URL__/tag/kubernetes/)
