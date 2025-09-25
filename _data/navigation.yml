@@ -5,3 +5,8 @@ main:
     url: /about/
   - title: Posts
     url: /posts/
+  - title: Docs
+    children:
+      - title: Platform
+        url: /docs/Platform/
+
