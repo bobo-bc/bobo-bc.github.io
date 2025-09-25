@@ -5,10 +5,7 @@ main:
     url: /about/
   - title: Posts
     url: /posts/
- - title: HomeLab
-   url: /categories/Homelab/
- - title: Swarm
-   url: /categories/Swarm/
-
-
-
+  - title: HomeLab
+    url: /categories/homelab/
+  - title: Swarm
+    url: /categories/swarm/
