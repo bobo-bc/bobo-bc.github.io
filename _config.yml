@@ -219,12 +219,3 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-plugins:
-  - jekyll-auto-sidebar
-
-auto_sidebar:
-  collections:
-    docs:
-      path: "_docs"
-      side: left
-
