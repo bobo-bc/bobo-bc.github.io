@@ -164,14 +164,10 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-
 collections:
-  tabs:
+  docs:
     output: true
-    sort_by: order
-  swarm:
-    output: true
-    permalink: /swarm/:name/
+    permalink: /:collection/:path/
 
 defaults:
   - scope:
