@@ -226,3 +226,10 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+docs:
+  - title: Platform
+    children:
+      - title: Jumpbox
+        url: /docs/Platform/2025-09-22-jumpbox/
+
