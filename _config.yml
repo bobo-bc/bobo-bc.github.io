@@ -226,7 +226,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
+
