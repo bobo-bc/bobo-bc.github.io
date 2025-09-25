@@ -6,3 +6,8 @@
   url: /swarm/
 - title: About
   url: /about/
+docs:
+  - title: Platform
+    children:
+      - title: Jumpbox
+        url: /docs/Platform/2025-09-22-jumpbox/
