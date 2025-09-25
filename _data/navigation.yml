@@ -7,5 +7,10 @@ main:
     url: /posts/
   - title: Categories
     url: /categories/
+    children:
+      - title: Homelab
+        url: /categories/homelab/
+      - title: Swarm
+        url: /categories/swarm/
   - title: Tags
     url: /tags/
