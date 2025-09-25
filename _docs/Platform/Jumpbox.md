@@ -1,0 +1,101 @@
+---
+layout: docs
+title: "Jumpbox"
+---
+
+I cannot express enough the need for a jumpbox. I use dietpi and have
+included desktop in case I am looking for that experience but mostly
+just use the cli. 
+
+To prep the jumpbox you need to at least copy the config yaml from your
+kubernetes master to manage it. use this from the jump box:
+
+``` plaintext
+ssh k3s1 "sudo cat /etc/rancher/k3s/k3s.yaml" > ~/.kube/config
+```
+
+ 
+
+then to change the IP to the vip or primary master IP do this
+
+``` plaintext
+sed -i 's/127.0.0.1/10.0.0.10/' ~/.kube/config
+```
+
+ 
+
+ 
+
+now you can 
+
+``` plaintext
+kubeconfig get nodes -o wide
+```
+
+ 
+
+to see your cluster.
+
+ 
+
+to make life easier you can add your public key to cloud-init on
+Proxmox. 
+
+on your jumpbox
+
+``` plaintext
+cat /home/bobo/.ssh/id_ed25519.pub
+```
+
+ 
+
+ 
+
+ and on your mac
+
+``` plaintext
+sudo cat /Users/steven/.ssh/id_rsa.pub
+```
+
+ 
+
+Now,  the pro move is to add a config file under .ssh/config with the
+content formatted like this
+
+``` plaintext
+Host k3s1
+  HostName 10.0.0.11
+  User bobo
+
+Host k3s2
+  HostName 10.0.0.12
+  User bobo
+
+Host k3s3
+  HostName 10.0.0.13
+  User bobo
+
+Host worker1
+  HostName 10.0.0.14
+  User bobo
+
+Host worker2
+  HostName 10.0.0.15
+  User bobo
+
+Host worker3
+  HostName 10.0.0.16
+  User bobo
+```
+
+ 
+
+if you need to add ssh key manually,
+
+``` plaintext
+ssh-copy-id bobo@k3s1
+```
+
+ 
+
+ 
