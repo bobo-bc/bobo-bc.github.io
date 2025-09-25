@@ -16,7 +16,7 @@ timezone: America/Vancouver
 
 title: Meyerwire # the main title
 
-tagline: Notes on my homelab and life # it will display as the subtitle
+tagline: Notes on my life and homelab # it will display as the subtitle
 
 description: Homelab blog that captures notes from leassons learned and interesting ideas.
 
