@@ -164,10 +164,6 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
 
 defaults:
   - scope:
@@ -222,4 +218,13 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+plugins:
+  - jekyll-auto-sidebar
+
+auto_sidebar:
+  collections:
+    docs:
+      path: "_docs"
+      side: left
 
