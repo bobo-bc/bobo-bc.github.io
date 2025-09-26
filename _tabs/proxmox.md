@@ -8,4 +8,4 @@ permalink: /proxmox/
 
 
 
-<meta http-equiv="refresh" content="0; url=/tags/proxmox/">
+<meta http-equiv="refresh" content="0; url=/tags/Proxmox/">
