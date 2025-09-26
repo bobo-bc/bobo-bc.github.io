@@ -8,4 +8,4 @@ permalink: /k3s/
 
 
 
-<meta http-equiv="refresh" content="0; url=/tags/kubernetes/">
+<meta http-equiv="refresh" content="0; url=/tags/Kubernetes/">
