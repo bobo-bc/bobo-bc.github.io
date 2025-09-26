@@ -3,7 +3,7 @@ title: Build a Proxmox Host on a Minisforum MS-01
 slug: build-a-proxmox-host-on-a-minisforum-ms-01-6851f6120e033e001c52b632
 date_published: 2025-05-05T23:43:18.000Z
 date_updated: 2025-05-05T23:43:18.000Z
-tags: Homelab, Kubernetes, #Migrated-1750201873783, #wp, #wp-post, #Import 2025-06-17 16:11
+tags: [proxmox]
 ---
 
 ---
