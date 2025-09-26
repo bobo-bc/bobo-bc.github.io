@@ -8,4 +8,4 @@ permalink: /_swarm/
 # Docker Swarm Tutorials
 
 Welcome to my docker swarm lab notes which will guide you through How I made a fully working high available swarm. 
-- [01 - setting up the managers](/posts/swarm/2025-02-08-the-swarm.md)
+- [01 - setting up the managers](/swarm/setup.md)
