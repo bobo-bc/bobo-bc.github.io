@@ -7,8 +7,7 @@ permalink: /swarm/
 ---
 
 # Docker Swarm Tutorial
-
-{% assign swarm_pages = site.pages | where_exp:"p","p.path contains 'swarm/'" | sort: "title" %}
+{% assign swarm_pages = site.pages | where_exp:"p","p.path contains 'swarm/'" | sort: "path" %}
 
 <ul>
 {% for page in swarm_pages %}
