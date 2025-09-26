@@ -2,7 +2,7 @@
 # the default layout is 'page'
 title: About
 icon: fas fa-info-circle
-order: 4
+order: 9
 ---
 
 I’ve always been curious—sometimes dangerously so. That curiosity has led me on a bit of an adventure, opening the door to beautiful travels, thoughtful studies, and a mix of unexpected experiences.
