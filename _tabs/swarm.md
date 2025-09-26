@@ -1,11 +1,17 @@
 ---
 layout: tab
 title: Docker Swarm
-icon: fa-solid fa-file
-order: 5 # Adjust the order as needed to position your menu item
+icon: fa-solid fa-layer-group
+order: 5
 permalink: /swarm/
 ---
-# Docker Swarm Tutorials
 
-Welcome to my docker swarm lab notes which will guide you through How I made a fully working high available swarm. 
-- [01 - setting up the managers](/swarm/setup)
+# Docker Swarm Tutorial
+
+{% assign swarm_pages = site.pages | where_exp:"p","p.path contains 'swarm/'" | sort: "title" %}
+
+<ul>
+{% for page in swarm_pages %}
+  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
