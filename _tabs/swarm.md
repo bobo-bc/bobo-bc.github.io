@@ -6,11 +6,6 @@ order: 5
 permalink: /swarm/
 ---
 
-# Docker Swarm Tutorial
-{% assign swarm_pages = site.pages | where_exp:"p","p.path contains 'swarm/'" | sort: "path" %}
 
-<ul>
-{% for page in swarm_pages %}
-  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-{% endfor %}
-</ul>
+
+<meta http-equiv="refresh" content="0; url=/tags/swarm/">
