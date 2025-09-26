@@ -2,7 +2,7 @@
 layout: tab
 title: Docker Swarm
 icon: fa-solid fa-layer-group
-order: 5
+order: 2
 permalink: /swarm/
 ---
 
