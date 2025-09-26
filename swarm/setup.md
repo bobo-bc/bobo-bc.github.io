@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Setting up Managers
 permalink: /swarm/setup/
 ---
