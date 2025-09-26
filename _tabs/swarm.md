@@ -5,3 +5,7 @@ icon: fa-solid fa-file
 order: 5 # Adjust the order as needed to position your menu item
 permalink: /_swarm/
 ---
+# Docker Swarm Tutorials
+
+Welcome to my docker swarm lab notes which will guide you through How I made a fully working high available swarm. 
+- [01 - setting up the manangers](/swarm/2025-02-08-the-swarm.md/)
