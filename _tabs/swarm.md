@@ -8,4 +8,4 @@ permalink: /swarm/
 
 
 
-<meta http-equiv="refresh" content="0; url=/categories/swarm/">
+<meta http-equiv="refresh" content="0; url=/tags/swarm/">
