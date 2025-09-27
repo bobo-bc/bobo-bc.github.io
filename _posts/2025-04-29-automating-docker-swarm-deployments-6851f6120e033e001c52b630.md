@@ -3,7 +3,7 @@ title: "Automating Docker Swarm Deployments:"
 slug: automating-docker-swarm-deployments-6851f6120e033e001c52b630
 date_published: 2025-04-30T02:25:07.000Z
 date_updated: 2025-04-30T02:25:07.000Z
-tags: Docker Swarm, #Migrated-1750201873783, #wp, #wp-post, #Import 2025-06-17 16:11
+tags: Docker Swarm
 ---
 
 **Using GitHub as a Repository and Deploying with Portainer EE**
