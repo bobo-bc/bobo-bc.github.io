@@ -1,7 +1,7 @@
 ---
 layout: tab
 title: Kubernetes
-parent: homelab
+parent: Homelab
 icon: fa-solid fa-layer-group
 order: 3
 permalink: /kubernetes/
