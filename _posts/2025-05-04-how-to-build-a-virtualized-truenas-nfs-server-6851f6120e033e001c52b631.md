@@ -3,7 +3,7 @@ title: A virtualized TrueNas NFS server in Proxmox
 slug: how-to-build-a-virtualized-truenas-nfs-server-6851f6120e033e001c52b631
 date_published: 2025-05-04T23:52:08.000Z
 date_updated: 2025-06-17T23:51:52.000Z
-tags: #Migrated-1750201873783, #wp, #wp-post, #Import 2025-06-17 16:11, Homelab
+tags: Proxmox
 ---
 
 **Published by Bobo on May 4, 2025**
