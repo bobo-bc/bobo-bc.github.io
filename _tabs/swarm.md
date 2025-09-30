@@ -1,11 +1,8 @@
 ---
-layout: tab
 title: Docker Swarm
 icon: fab fa-docker
 order: 3
-permalink: /swarm/
+layout: categories
+category: Docker Swarm
 ---
 
-
-
-<meta http-equiv="refresh" content="0; url=/tags/swarm/">
