@@ -3,7 +3,7 @@ layout: post
 title: "My HomeLab Journey"
 date: 2025-09-15 14:30:00 +0800
 categories: [HomeLab]
-tags: [Proxmox, K3s, docker]
+tags: [Homelab]
 ---
     
 ## Why homelab
