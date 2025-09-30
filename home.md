@@ -1,9 +1,0 @@
----
-layout: home
-title: Welcome
-permalink: /
----
-
-# Welcome to My Site
-
-Am experimenting with static site content. 
