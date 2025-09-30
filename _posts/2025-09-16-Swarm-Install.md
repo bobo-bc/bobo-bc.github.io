@@ -3,7 +3,7 @@ layout: post
 title: "Swarm install"
 date: 2025-09-16 11:30:00 +0800
 categories: [Swarm]
-tags: [docker]
+tags: [Swarm]
 ---
 
 ## Install Docker Swarm
