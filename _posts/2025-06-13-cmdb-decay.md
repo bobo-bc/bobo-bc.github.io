@@ -3,7 +3,7 @@ title: Don’t Let Your CMDB Decay
 slug: cmdb-decay
 date_published: 2025-06-13T20:20:56.000Z
 date_updated: 2025-06-18T18:18:49.000Z
-tags: itsm, #Migrated-1750201873783, #wp, #wp-post, #Import 2025-06-17 16:11
+tags: itsm, CMDB
 ---
 
 **The Critical Work Begins After Go-Live**
