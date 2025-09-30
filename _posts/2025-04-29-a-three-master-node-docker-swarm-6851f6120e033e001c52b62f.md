@@ -3,7 +3,7 @@ title: A three master node docker swarm
 slug: a-three-master-node-docker-swarm-6851f6120e033e001c52b62f
 date_published: 2025-04-30T02:15:08.000Z
 date_updated: 2025-04-30T02:15:08.000Z
-tags: Docker Swarm
+tags: Swarm
 ---
 
 ## **ntroduction**
