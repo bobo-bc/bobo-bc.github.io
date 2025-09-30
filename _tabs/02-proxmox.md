@@ -1,7 +1,7 @@
 ---
 layout: tab
 title: Proxmox
-icon: fa-solid fa-layer-group
+icon: fas fa-network-wired
 order: 2
 permalink: /proxmox/
 ---
