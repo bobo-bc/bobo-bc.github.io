@@ -3,7 +3,7 @@ layout: post
 title: "Docker Swarm"
 date: 2025-09-15 15:30:00 +0800
 categories: [Swarm]
-tags: [Proxmox, docker]
+tags: [Swarm]
 ---
 ## Intro
 This simplified guide for TuringPi cluster is less windy than the original: [rip4cluster](https://rpi4cluster.com/docker-swarm-intro).
