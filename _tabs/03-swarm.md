@@ -1,9 +1,8 @@
 ---
 layout: tab
 title: Docker Swarm
-parent: Homelab
 icon: fa-solid fa-layer-group
-order: 2
+order: 3
 permalink: /swarm/
 ---
 
