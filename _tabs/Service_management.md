@@ -6,6 +6,3 @@ Layout: categories
 category: Service Management
 ---
 
-
-
-<meta http-equiv="refresh" content="0; url=/tags/ITSM/">
