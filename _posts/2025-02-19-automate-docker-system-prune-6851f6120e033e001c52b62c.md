@@ -3,7 +3,7 @@ title: Automate docker system prune
 slug: automate-docker-system-prune-6851f6120e033e001c52b62c
 date_published: 2025-02-20T04:20:00.000Z
 date_updated: 2025-06-17T23:50:34.000Z
-tags: Docker Swarm
+tags: Swarm
 ---
 
 Running my docker swarm and experimenting with new things creates a lot of technical debt in the form of unused images, volumes and networks.
