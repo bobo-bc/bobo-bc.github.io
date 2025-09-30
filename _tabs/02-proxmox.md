@@ -1,9 +1,8 @@
 ---
 layout: tab
 title: Proxmox
-parent: Homelab
 icon: fa-solid fa-layer-group
-order: 1
+order: 2
 permalink: /proxmox/
 ---
 
