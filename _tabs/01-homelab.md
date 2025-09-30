@@ -1,7 +1,7 @@
 ---
 layout: tab
 title: Homelab
-icon: fas fa-network-wired
+icon: fas fa-server
 order: 1
 permalink: /homelab/
 ---
