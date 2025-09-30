@@ -1,7 +1,7 @@
 ---
 layout: tab
 title: Service Management
-icon: as fa-cogs
+icon: fas fa-cogs
 order: 5
 permalink: /itsm/
 ---
