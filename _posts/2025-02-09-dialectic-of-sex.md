@@ -3,7 +3,7 @@ title: Dialetic of Sex
 slug: dialectic-of-sex
 date_published: 2025-02-10T05:06:45.000Z
 date_updated: 2025-06-18T18:21:29.000Z
-categories: Opinion
+categories: [Opinion]
 ---
 
 ### **What romantic tension, social movements, and global politics all get wrong about connection**
