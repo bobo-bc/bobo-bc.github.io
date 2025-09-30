@@ -1,9 +1,9 @@
 ---
-layout: tab
 title: Kubernetes
 icon: fas fa-project-diagram
 order: 4
-permalink: /kubernetes/
+layout: categories
+category: Kubernetes
 ---
 
 
