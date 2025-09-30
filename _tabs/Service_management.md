@@ -3,9 +3,9 @@ layout: tab
 title: Service Management
 icon: fas fa-cogs
 order: 5
-permalink: /itsm/
+permalink: /ITSM/
 ---
 
 
 
-<meta http-equiv="refresh" content="0; url=/tags/itsm/">
+<meta http-equiv="refresh" content="0; url=/tags/ITSM/">
