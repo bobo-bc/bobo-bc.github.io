@@ -2,7 +2,7 @@
 layout: tab
 title: Service Management
 icon: fa-solid fa-layer-group
-order: 6
+order: 5
 permalink: /itsm/
 ---
 
