@@ -3,7 +3,7 @@ title: CMDB Governance
 slug: cmdb-governance
 date_published: 2025-06-18T00:11:02.000Z
 date_updated: 2025-06-18T00:11:02.000Z
-tags: itsm
+tags: ITSM
 ---
 
 A solid CMDB forms the backbone of effective ITSM practices, yet it often becomes the weakest link in many ServiceNow setups. Initiating the CMDB construction by importing data or uploading spreadsheets is a step forward, but the crucial aspects of continuous data validation and lifecycle management are frequently overlooked. This neglect leads to an unreliable CMDB over time, filled with incomplete, duplicated, or outdated Configuration Items (CIs) that directly impede critical processes like Incident, Change, and Problem Management.
