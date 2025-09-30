@@ -1,7 +1,7 @@
 ---
 layout: tab
 title: Opinions
-icon: fa-solid fa-layer-group
+icon: fas fa-comment-alt
 order: 6
 permalink: /opinion/
 ---
