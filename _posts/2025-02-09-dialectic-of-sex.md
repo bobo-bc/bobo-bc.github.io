@@ -3,7 +3,7 @@ title: The Third Thing
 slug: dialectic-of-sex
 date_published: 2025-02-10T05:06:45.000Z
 date_updated: 2025-06-18T18:21:29.000Z
-tags: Opinions, #Migrated-1750201873783, #wp, #wp-post, #Import 2025-06-17 16:11
+tags: Opinion
 ---
 
 ### **What romantic tension, social movements, and global politics all get wrong about connection**
