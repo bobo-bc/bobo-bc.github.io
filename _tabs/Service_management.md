@@ -1,5 +1,4 @@
 ---
-layout: tab
 title: Service Management
 icon: fas fa-cogs
 order: 5
