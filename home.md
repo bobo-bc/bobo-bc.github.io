@@ -6,4 +6,4 @@ permalink: /
 
 # Welcome to My Site
 
-This is my static homepage content.
+Am experimenting with static site content. 
