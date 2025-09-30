@@ -3,7 +3,7 @@ layout: post
 title: "3 Node Master Swarm"
 date: 2025-09-16 11:40:00 +0800
 categories: [Swarm]
-tags: [docker]
+tags: [Swarm]
 ---
 
 ## Introduction
