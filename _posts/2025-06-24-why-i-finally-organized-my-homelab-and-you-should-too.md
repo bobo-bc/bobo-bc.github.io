@@ -4,6 +4,7 @@ slug: why-i-finally-organized-my-homelab-and-you-should-too
 date_published: 2025-06-25T03:28:57.000Z
 date_updated: 2025-06-25T03:29:25.000Z
 tags: Homelab
+categories: [homelab]
 ---
 
 After months of stacking gear like a game of Tetris on my shelf, I finally bit the bullet and bought a GeeekPi 4U Server Cabinet to bring some order to my homelab. My setup isn’t huge—just a **Minisforum MS-01**, a **UniFi Gateway Ultra**, a **Netgear PoE switch, **and a couple of **external m2 sata drives. **—but once you start adding VMs, access points, and Docker containers, things can get messy fast.
