@@ -3,8 +3,8 @@ title: Supercharging Your Homelab Projects
 slug: supercharging-your-homelab-projects
 date_published: 2025-06-18T18:37:47.000Z
 date_updated: 2025-06-18T18:37:47.000Z
-tags: Homelab
-categories: [Homelab]
+tags: chat-gpt
+categories: [homelab]
 ---
 
 **with ChatGPT: Design, YAML, and Troubleshooting Tips**
