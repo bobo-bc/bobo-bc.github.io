@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Docker Swarm Design"
-date: 2025-08-30 15:30:00 +0800
+date: 2025-09-30 15:30:00 +0800
 categories: [swarm]
 tags: [build]
 ---
