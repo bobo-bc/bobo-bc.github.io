@@ -1,9 +1,7 @@
 ---
+layout: post
 title: Docker Swarm Best Practices with Portainer
-slug: docker-swarm-best-practices-with-portainer-6851f6120e033e001c52b633
-date_published: 2025-05-13T05:06:28.000Z
-date_updated: 2025-05-13T05:06:28.000Z
-tags: Swarm
+date: 2025-09-11 11:40:00 +0800
 categories: [swarm]
 ---
 
@@ -203,10 +201,7 @@ Portainer BE includes:
 
 Stay lean by regularly reviewing **Volumes**, **Networks**, and **Stacks** in Portainer’s dashboards.
 
----
 
-## **Summary Table**
-**Feature****Portainer Best Practice**EnvironmentUse **Configs** for static env vars instead of .env filesSecretsManage and mount via Portainer Secrets with _FILE supportDeploymentsUse **Stacks** with rolling update configs and health checksLabelsUse Node/Service labels for scheduling and monitoringMaintenanceUse Portainer’s UI for cleanups, monitoring, and access logs
 ---
 
 ## **Wrapping Up**

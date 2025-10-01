@@ -1,14 +1,12 @@
 ---
 title: Shepherd- Keep Your Docker Swarm Services Up-to-Date
-slug: keep-your-docker-swarm-services-up-to-date-with-shepherd-6851f6120e033e001c52b634
-date_published: 2025-05-14T18:52:00.000Z
-date_updated: 2025-06-17T23:50:11.000Z
+date: 2025-09-11 11:40:00 +0800
 tags: apps
 categories: [swarm]
 ---
 
 ---
-
+# Keeping apps up to date
 If you’ve been running a Docker Swarm cluster, you’ve probably realized there’s no built-in mechanism for keeping your services updated when their images change. That’s where [**Shepherd**](https://containrrr.dev/shepherd) comes in—a lightweight tool from the creators of Watchtower, but made especially for Swarm. It keeps an eye on your running services and redeploys them when the image gets updated in your registry.
 
 Let’s walk through how to set up Shepherd in your Swarm cluster and use it to keep your services fresh and shiny.
