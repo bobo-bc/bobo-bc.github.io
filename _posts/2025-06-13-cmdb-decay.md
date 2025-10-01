@@ -4,6 +4,7 @@ slug: cmdb-decay
 date_published: 2025-06-13T20:20:56.000Z
 date_updated: 2025-06-18T18:18:49.000Z
 tags: ITSM
+categories: [service_management]
 ---
 
 **The Critical Work Begins After Go-Live**
