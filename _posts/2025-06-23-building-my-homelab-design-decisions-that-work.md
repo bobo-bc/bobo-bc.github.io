@@ -3,8 +3,8 @@ title: "Building My Homelab: Design Decisions That Work"
 slug: building-my-homelab-design-decisions-that-work
 date_published: 2025-06-23T18:27:33.000Z
 date_updated: 2025-06-23T18:29:11.000Z
-tags: Homelab
-categories: [Homelab]
+tags: infrastructure
+categories: [homelab]
 ---
 
 When I first set out to build my homelab, my goal was simple: create a reliable, efficient environment to run the services I rely on, while having full control over my network and infrastructure. After months of experimentation and refinement, here’s a breakdown of the key components and why I chose them.
