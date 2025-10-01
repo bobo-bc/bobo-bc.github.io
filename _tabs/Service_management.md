@@ -2,6 +2,6 @@
 title: Service Management
 icon: fas fa-cogs
 order: 5
-permalink: /service_management/
+permalink: /ITSM/
 ---
-<meta http-equiv="refresh" content="0; url=/categories/service_management/" />
+<meta http-equiv="refresh" content="0; url=/categories/ITSM/" />
