@@ -3,7 +3,7 @@ title: "When Inclusion Excludes"
 slug: the-exclusion-of-inclusion-6851f6120e033e001c52b62a
 date_published: 2025-02-10T05:30:12.000Z
 date_updated: 2025-02-10T05:30:12.000Z
-tags: Opinion
+catagories: [Opinion]
 ---
 
 The Environmental, Social, and Governance (ESG) framework was born from good intentions. As investors and institutions began to evaluate companies not just by profits but by their impact on people and the planet, ESG emerged as a set of guiding principles. Within this model, the “S”—the social component—has carried the promise of a more just, inclusive world.
