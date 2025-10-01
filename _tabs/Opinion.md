@@ -1,9 +1,7 @@
 ---
 title: Opinion
-icon: fas fa-comment-alt
+icon: fas fa-comment-dots
 order: 6
-layout: posts
-category: Opinion
 permalink: /Opinion/
 ---
-
+<meta http-equiv="refresh" content="0; url=/categories/Opinion/" />
