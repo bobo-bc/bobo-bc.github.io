@@ -4,6 +4,7 @@ slug: kubernetes-page
 date_published: 2025-06-12T02:37:52.000Z
 date_updated: 2025-06-18T18:38:59.000Z
 tags: Kubernetes
+ategories: [kubernetes]
 ---
 
 ## **Building a Kubernetes Cluster at Home**
