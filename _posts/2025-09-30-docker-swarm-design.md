@@ -6,7 +6,7 @@ categories: [swarm]
 tags: [build]
 ---
 ## Intro
-This simplified guide for TuringPi cluster is less windy than the original: [rip4cluster](https://rpi4cluster.com/docker-swarm-intro).
+This simplified guide for TuringPi cluster is less windy than the original: [rip4cluster](https://rpi4cluster.com/docker-swarm-intro). I mostly wrote this to ensure my own copy of the procedure in case the origional ever got retired off the internet.  I have made a few very minor changes just for my own clarity. 
 
 # Docker Swarm
 Docker Swarm is a native clustering solution for Docker. It lets you run multiple Docker daemons on multiple machines and manage them as a single virtual machine. It allows you to run Docker containers in Highly Available mode, scale them up and down, and run multiple services on the same cluster.
