@@ -4,6 +4,7 @@ slug: k3s-monitoring
 date_published: 2025-05-27T00:16:13.000Z
 date_updated: 2025-06-18T18:18:27.000Z
 tags: Kubernetes
+categories: [kubernetes]
 ---
 
 **with Prometheus, Grafana, and Homarr**
