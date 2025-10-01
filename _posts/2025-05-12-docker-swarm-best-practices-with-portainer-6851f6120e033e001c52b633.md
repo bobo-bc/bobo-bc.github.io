@@ -4,6 +4,7 @@ slug: docker-swarm-best-practices-with-portainer-6851f6120e033e001c52b633
 date_published: 2025-05-13T05:06:28.000Z
 date_updated: 2025-05-13T05:06:28.000Z
 tags: Swarm
+categories: [swarm]
 ---
 
 *Published by bobo on May 5, 2025*
