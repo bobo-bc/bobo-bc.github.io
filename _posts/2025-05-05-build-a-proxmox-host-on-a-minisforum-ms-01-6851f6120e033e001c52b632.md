@@ -4,6 +4,7 @@ slug: build-a-proxmox-host-on-a-minisforum-ms-01-6851f6120e033e001c52b632
 date_published: 2025-05-05T23:43:18.000Z
 date_updated: 2025-05-05T23:43:18.000Z
 tags: Proxmox
+categories: [proxmox]
 ---
 
 ---
