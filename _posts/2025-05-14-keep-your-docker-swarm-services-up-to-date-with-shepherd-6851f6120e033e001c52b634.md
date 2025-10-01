@@ -3,7 +3,8 @@ title: Shepherd- Keep Your Docker Swarm Services Up-to-Date
 slug: keep-your-docker-swarm-services-up-to-date-with-shepherd-6851f6120e033e001c52b634
 date_published: 2025-05-14T18:52:00.000Z
 date_updated: 2025-06-17T23:50:11.000Z
-tags: Swarm
+tags: apps
+categories: [swarm]
 ---
 
 ---
