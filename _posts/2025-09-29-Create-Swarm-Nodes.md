@@ -1,9 +1,8 @@
 ---
 layout: post
-title: "Create VM Template for Swarm Nodes"
+title: "Swarm Nodes from vm template"
 date: 2025-09-29 10:30:00 +0800
 categories: [swarm]
-tags: [image]
 ---
 
 ## The Build
@@ -15,7 +14,7 @@ Create a dietpi virtual machine by using this install script run from the proxmo
 [dazeb install script](https://github.com/dazeb/proxmox-dietpi-installer)
 
 ```bash
-bash <(curl -sSfL https://raw.githubusercontent.com/dazeb/proxmox-dietpi-installer/main/dietpi-install.sh)Copy
+bash <(curl -sSfL https://raw.githubusercontent.com/dazeb/proxmox-dietpi-installer/main/dietpi-install.sh)
 ```
 
 Things to note:
@@ -64,9 +63,13 @@ After the node has been created log in and enter
 DietPi-Config
 ```
 
-Configure each clone change name, fix IP
+Configure each clone by changing name and fixing IP:
 
-node1 10.0.0.21
-node2 10.0.0.22
-node3 10.0.0.23
+| Node  | IP Address |
+|-------|------------|
+| node1 | 10.0.0.21  |
+| node2 | 10.0.0.22  |
+| node3 | 10.0.0.23  |
+
+
 One final reboot.

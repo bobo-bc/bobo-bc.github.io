@@ -27,4 +27,4 @@ GlusterFS is a scalable, distributed file system that allows you to store and ac
 
 ***NFS*** will be used for sharing common files like media and documents as well as other files. Look for walk throughs on standing up NFS under 
 
-**tags/storage**. 
+**#tags/storage**. 
