@@ -2,7 +2,7 @@
 title: "Building My Homelab: Design Decisions That Work"
 date_published: 2025-06-23T18:27:33.000Z
 date_updated: 2025-06-23T18:29:11.000Z
-tags: infrastructure
+tags: [series-k3s, design]
 categories: [homelab]
 ---
 

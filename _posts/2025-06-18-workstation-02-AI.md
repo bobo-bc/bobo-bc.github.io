@@ -2,7 +2,7 @@
 title: Supercharging Your Homelab Projects
 date_published: 2025-06-18T18:37:47.000Z
 date_updated: 2025-06-18T18:37:47.000Z
-tags: chat-gpt
+tags: [series-infrastructure,workstation, AI]
 categories: [homelab]
 ---
 

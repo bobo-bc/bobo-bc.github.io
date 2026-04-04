@@ -2,7 +2,8 @@
 layout: post
 title: Docker Swarm Best Practices with Portainer
 date: 2025-09-11 11:40:00 +0800
-categories: [swarm]
+categories: [Docker]
+tags: [swarm, series-swarm]
 ---
 
 *Published by bobo on May 5, 2025*

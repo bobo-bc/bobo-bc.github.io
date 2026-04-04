@@ -2,8 +2,8 @@
 layout: post
 title: "Docker Swarm Design"
 date: 2025-09-30 15:30:00 +0800
-categories: [swarm]
-tags: [build]
+categories: [Docker]
+tags: [swarm, series-swarm]
 ---
 ## Intro
 This simplified guide for TuringPi cluster is less windy than the original: [rip4cluster](https://rpi4cluster.com/docker-swarm-intro). I mostly wrote this to ensure my own copy of the procedure in case the origional ever got retired off the internet.  I have made a few very minor changes just for my own clarity. 

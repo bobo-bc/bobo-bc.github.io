@@ -2,7 +2,8 @@
 layout: post
 title: Automate docker system prune
 date: 2025-09-09
-categories: [swarm]
+categories: [Docker]
+tags: [swarm, series-swarm]
 ---
 
 Running my docker swarm and experimenting with new things creates a lot of technical debt in the form of unused images, volumes and networks.
