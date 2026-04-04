@@ -3,7 +3,7 @@ layout: post
 title: "Swarm Nodes from vm template"
 date: 2025-09-29 10:30:00 +0800
 categories: [Docker]
-tags: [swarm, series-swarm]
+tags: [series-swarm]
 ---
 
 ## The Build
@@ -67,7 +67,7 @@ DietPi-Config
 Configure each clone by changing name and fixing IP:
 
 | Node  | IP Address |
-|-------|------------|
+| ----- | ---------- |
 | node1 | 10.0.0.21  |
 | node2 | 10.0.0.22  |
 | node3 | 10.0.0.23  |

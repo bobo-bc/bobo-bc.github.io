@@ -2,7 +2,7 @@
 title: Shepherd- Keep Your Docker Swarm Services Up-to-Date
 date: 2025-09-11 11:40:00 +0800
 categories: [Docker]
-tags: [swarm, series-swarm]
+tags: [series-swarm]
 ---
 
 ---

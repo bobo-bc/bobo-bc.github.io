@@ -3,7 +3,7 @@ layout: post
 title: "GlusterFS"
 date: 2025-09-13 11:40:00 +0800
 categories: [Docker]
-tags: [swarm, series-swarm]
+tags: [series-swarm]
 ---
 
 ##Install and Configure GlusterFS for Distributed Storage

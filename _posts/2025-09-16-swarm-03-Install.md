@@ -3,7 +3,7 @@ layout: post
 title: "Swarm install"
 date: 2025-09-28 18:30:00 +0800
 categories: [Docker]
-tags: [swarm, series-swarm]
+tags: [series-swarm]
 
 ---
 
@@ -64,9 +64,9 @@ You can check that with commands:
 docker network ls
 ```
 
-| NETWORK ID   | NAME                  | DRIVER  | SCOPE |
-|--------------|-----------------------|:-------:|:-----:|
-| kpiocqticjlx | ingress               | overlay | swarm |
+| NETWORK ID   | NAME                    | DRIVER  | SCOPE |
+| ------------ | ----------------------- | :-----: | :---: |
+| kpiocqticjlx | ingress                 | overlay | swarm |
 | k55h53e1e97d | portainer_agent_network | overlay | swarm |
 
 using the Network ID of the ingress network
