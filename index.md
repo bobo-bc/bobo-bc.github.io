@@ -2,6 +2,7 @@
 layout: page
 title: Home
 permalink: /
+toc: true
 ---
 # Building a Modern Homelab
 
@@ -11,7 +12,7 @@ This site documents the journey — the wins, the mistakes, and the lessons lear
 
 ## Why this site exists
 
-I’ve been running some form of homelab for over 20 years — starting with an old Dell laptop running Debian.
+I’ve been running some form of homelab for over 20 years — starting with an old compaq laptop running Debian.
 
 Over time I’ve explored:
 
@@ -19,10 +20,9 @@ Over time I’ve explored:
 - Docker and Docker Swarm  
 - k3s Kubernetes  
 
-In 2024, I shifted toward a more production-style approach using Talos Linux.
+In 2024, I shifted toward a more production-style approach and clustering.
 
-This site captures that evolution.
-> 🚧 Currently focused on: Talos Kubernetes
+This site captures that evolution. > 🚧 Currently focused on: Talos Kubernetes
 
 ---
 
