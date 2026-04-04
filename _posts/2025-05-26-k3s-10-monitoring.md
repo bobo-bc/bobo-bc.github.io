@@ -1,9 +1,8 @@
 ---
 title: Monitoring and Performance in k3s
-slug: k3s-monitoring
 date_published: 2025-05-27T00:16:13.000Z
 date_updated: 2025-06-18T18:18:27.000Z
-tags: Kubernetes
+tags: [k3s, series-k3s]
 categories: [kubernetes]
 ---
 

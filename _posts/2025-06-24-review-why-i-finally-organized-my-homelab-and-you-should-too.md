@@ -1,6 +1,5 @@
 ---
 title: Why I Finally Organized My Homelab (And You Should Too)
-slug: why-i-finally-organized-my-homelab-and-you-should-too
 date_published: 2025-06-25T03:28:57.000Z
 date_updated: 2025-06-25T03:29:25.000Z
 tags: github

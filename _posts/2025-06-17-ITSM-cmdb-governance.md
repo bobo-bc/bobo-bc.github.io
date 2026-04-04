@@ -1,6 +1,5 @@
 ---
 title: CMDB Governance
-slug: cmdb-governance
 date_published: 2025-06-18T00:11:02.000Z
 date_updated: 2025-06-18T00:11:02.000Z
 tags: cmdb, data

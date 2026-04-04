@@ -1,6 +1,5 @@
 ---
 title: Why homelab?
-slug: lab
 date_published: 2025-01-24T23:55:44.000Z
 date_updated: 2025-06-18T18:41:14.000Z
 tags: Homelab

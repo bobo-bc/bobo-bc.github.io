@@ -1,6 +1,5 @@
 ---
 title: My setup
-slug: my-setup
 date_published: 2025-02-07T21:29:43.000Z
 date_updated: 2025-06-18T18:22:21.000Z
 categories: [comeLab]

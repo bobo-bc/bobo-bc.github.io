@@ -1,6 +1,5 @@
 ---
 title: "When Inclusion Excludes"
-slug: the-exclusion-of-inclusion-6851f6120e033e001c52b62a
 date_published: 2025-02-10T05:30:12.000Z
 date_updated: 2025-02-10T05:30:12.000Z
 categories: [opinion]

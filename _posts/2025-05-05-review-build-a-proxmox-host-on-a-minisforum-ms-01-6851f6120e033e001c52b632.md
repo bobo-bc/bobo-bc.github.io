@@ -1,6 +1,5 @@
 ---
 title: Build a Proxmox Host on a Minisforum MS-01
-slug: ms01
 date_published: 2025-05-05T23:43:18.000Z
 date_updated: 2025-05-05T23:43:18.000Z
 tags: infrastruture

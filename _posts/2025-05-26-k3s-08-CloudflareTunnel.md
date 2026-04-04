@@ -1,9 +1,8 @@
 ---
 title: "Post 8: Cloudflare Tunnel"
-slug: post-8
 date_published: 2025-05-26T21:20:00.000Z
 date_updated: 2025-06-18T18:17:24.000Z
-tags: Kubernetes
+tags: [k3s, series-k3s]
 categories: [kubernetes]
 ---
 

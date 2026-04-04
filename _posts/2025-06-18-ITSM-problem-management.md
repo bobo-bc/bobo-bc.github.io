@@ -1,6 +1,5 @@
 ---
 title: Why Problem Management Deserves a Seat at the Table in ITSM
-slug: problem-management
 date_published: 2025-06-18T17:36:13.000Z
 date_updated: 2025-06-18T18:19:43.000Z
 tags: problem

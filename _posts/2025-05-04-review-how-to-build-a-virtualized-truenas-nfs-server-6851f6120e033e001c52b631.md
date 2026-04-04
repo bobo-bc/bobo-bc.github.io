@@ -1,6 +1,5 @@
 ---
 title: A virtualized TrueNas NFS server in Proxmox
-slug: 4
 date_published: 2025-05-04T23:52:08.000Z
 date_updated: 2025-06-17T23:51:52.000Z
 tags: [k3s, series-k3s]

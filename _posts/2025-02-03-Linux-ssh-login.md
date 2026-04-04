@@ -1,6 +1,5 @@
 ---
 title: ssh auto login
-slug: ssh-login
 date_published: 2025-02-03T22:24:08.000Z
 date_updated: 2025-06-18T18:22:07.000Z
 categories: [homeLab]
