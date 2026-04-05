@@ -134,7 +134,7 @@ If you are building your own homelab, the goal is to provide clarity and save ti
 
 If you’re new, begin with:
 
->[Building a Proxmox Host](/tags/proxmox)
+>[Building a Proxmox Host](posts/proxmox-01-host/)
 
 
 
