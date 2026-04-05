@@ -6,198 +6,274 @@ tags: [series-infrastructure, proxmox, virtualization]
 categories: [homelab]
 ---
 
----
+# Building Your First Proxmox Homelab Server
 
-*Published by bobo on May 5, 2025*
-
-If you’re looking to create a compact yet beastly Proxmox server, the **Minisforum MS-01** is a perfect candidate. In this post, I’ll show you how to turn one into a full-featured **Proxmox VE host** with:
-
-✅ **96 GB of RAM**
-
-✅ **20-core CPU**
-
-✅ **1TB NVMe SSD dedicated to Proxmox**
-
-✅ **Bonded 2.5GbE ports with a static IP**
-
-✅ **LACP teaming for performance + redundancy**
+*A practical guide based on real experience — including the mistakes you don’t have to make.*
 
 ---
 
-## **? What You’ll Need**
+If you want a reliable foundation for a homelab, it starts with virtualization.
 
-- **Minisforum MS-01** (or similar with dual NICs)
-- Proxmox VE ISO → [Download it here](https://www.proxmox.com/en/downloads)
-- USB flash drive (2GB+)
-- Monitor + keyboard for first boot
-- Static IP address: 10.0.0.5
-- Your router/switch must support **802.3ad (LACP)** for bonding
+Proxmox VE provides that foundation — a platform to run virtual machines, containers, and entire environments on a single piece of hardware without losing control.
+
+This guide walks through building a Proxmox host from scratch using a Minisforum MS-01, including the decisions, tradeoffs, and mistakes I made along the way.
 
 ---
 
-## **? Step 1: Flash the Proxmox ISO**
+## What this setup looks like
 
-1. Download the latest **Proxmox VE ISO**.
-2. Use [balenaEtcher](https://etcher.io/) or [Rufus](https://rufus.ie/) to flash the ISO to your USB.
-3. Safely eject the drive when done.
+- Single Proxmox host (Minisforum MS-01)  
+- NVMe for OS and base workloads  
+- Additional NVMe drives for storage and future cluster use  
+- VLAN-aware networking  
+- Prepared for Kubernetes and distributed workloads  
 
----
-
-## **? Step 2: Install Proxmox on the MS-01**
-
-1. Plug the USB drive into your MS-01 and boot it.
-2. Enter BIOS (DEL or F11) and boot from USB.
-3. Choose **Install Proxmox VE**.
-4. Select the **1TB NVMe** as the install target.
-- Use **ext4** or **ZFS RAID0** (if you’ll add more drives later).
-
-5. Set your root password and email.
-6. Skip static IP for now — we’ll handle that post-install.
-7. Finish the install, then reboot and remove the USB.
+This is the baseline everything else in the homelab builds on.
 
 ---
 
-## **? Step 3: Bond the Dual 2.5GbE NICs + Set Static IP**
+## What You’ll Need
 
-We’ll configure **LACP (802.3ad) bonding** to combine your two NICs into a single, fault-tolerant link with increased throughput.
+**Hardware:**
 
-### **1. Log into the Proxmox Web UI**
+- A capable machine with multi-core CPU and virtualization support (VT-x/VT-d)  
+- A dedicated NVMe for Proxmox + VM storage (512GB is typically sufficient)  
+- At least one additional drive for data or media  
+- A USB flash drive (4GB+) for the installer  
+- Monitor + keyboard for initial setup  
 
-Visit: https://your-proxmox-ip:8006
-
-(Log in with root and the password you set.)
-
-If you don’t know the IP, check it via console:
-
-    ip a
-
----
-
-### **2. Create a Bond Interface**
-
-1. Go to **Datacenter > your-node > System > Network**.
-2. Click **Create > Linux Bond**.
-- Name: bond0
-- Slaves: enp1s0, enp2s0 (check ip a for your NIC names)
-- Mode: 802.3ad (LACP)
-- Hash Policy: layer2+3
-- Autostart: ✅
-
-Click **Create**.
+> **On the Minisforum MS-01**  
+> This mini PC is well suited for a homelab. It includes three M.2 NVMe slots, dual 10GbE SFP+, and two 2.5GbE ports.  
+>  
+> I used one NVMe for Proxmox, one for media storage, and one reserved for Kubernetes storage. The hardware performs well above what you would expect for its size.
 
 ---
 
-### **3. Create a Linux Bridge for VMs/Containers**
+**Software:**
 
-1. Click **Create > Linux Bridge**.
-- Name: vmbr0
-- Bridge Ports: bond0
-- IPv4: Static
-- IP: 10.0.0.5/24
-- Gateway: 10.0.0.1 (your router)
-
-- IPv6: None
-- Autostart: ✅
-
-Click **Create** and then **Apply Configuration**.
-
-> ⚠️ Note: This will temporarily disconnect your Web UI session if done remotely.
+- [Proxmox VE ISO](https://www.proxmox.com/en/downloads)  
+- [Rufus](https://rufus.ie) (Windows) or `dd` (Linux/macOS)  
 
 ---
 
-## **? Step 4: Update Proxmox & Switch to Community Repos**
+## Step 1: BIOS Configuration
 
-By default, Proxmox uses a subscription-only repo. Let’s switch it out and update everything.
+Before installing anything, configure the BIOS correctly. Many installation issues originate here.
 
-1. SSH into your host or use the web terminal.
-2. Add the community (no-subscription) repo:
+**Enter BIOS:** Press `Del` during boot.
 
-    echo "deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription" > /etc/apt/sources.list.d/pve-no-sub.list
+### Required settings (MS-01)
 
-1. Disable the enterprise repo:
+**Disable Intel VMD**  
+`Advanced → VMD Setup Menu → Intel VMD → Disabled`
 
-    sed -i 's/^deb/#deb/' /etc/apt/sources.list.d/pve-enterprise.list
-
-1. Update and upgrade:
-
-    apt update && apt full-upgrade -y
-
-1. Reboot if prompted:
-
-    reboot
+With VMD enabled, the installer may fail to detect NVMe drives correctly.
 
 ---
 
-## **? Step 5: Run the Proxmox Helper Post-Install Script**
+**Disable ASPM (Active State Power Management)**
 
-Save time and automate cleanup with the **Proxmox Helper Script** by tteck on GitHub.
-
-Run this in the terminal:
-
-    curl -sL https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh | bash
-
-From the menu, you can:
-
-- ✅ Remove enterprise repo
-- ✅ Add no-subscription repo
-- ✅ Disable the nag screen
-- ✅ Apply common performance tweaks
-
-Follow the prompts and let the script handle the rest.
+Disable ASPM wherever it appears in the BIOS. Power-saving features can introduce instability in a system intended to run continuously.
 
 ---
 
-## **? Step 6: Enable QEMU Guest Agent by Default**
+**Enable VT-d / IOMMU**  
+`Advanced → CPU Configuration → Intel VT-d → Enabled`
 
-This lets your VMs talk back to Proxmox — for things like IP display, shutdowns, and backups.
-
-1. In the Proxmox UI, go to:**Datacenter > Options > QEMU Guest Agent**
-2. Set **Default: Yes**
+Required for device passthrough.
 
 ---
 
-## **? Step 7: Optional – Enable Wake-on-LAN (WOL)**
+**Set Boot Performance Mode**  
+`Advanced → CPU Configuration → Boot Performance Mode → Max Non-Turbo Performance`
 
-If you want to power on your Proxmox box remotely:
-
-1. Enable WOL for each NIC:
-
-    ethtool -s enp1s0 wol g
-    ethtool -s enp2s0 wol g
-
-1. Make it persistent:
-
-Edit /etc/network/interfaces and add:
-
-    post-up ethtool -s enp1s0 wol g
-    post-up ethtool -s enp2s0 wol g
+Turbo modes can introduce instability under virtualization workloads, particularly with hybrid CPU architectures.
 
 ---
 
-## **✅ Step 8: Final Touches**
-
-Install some handy tools:
-
-    apt install htop nvme-cli smartmontools -y
-
-Set up your first backup, add NFS/SMB shares, or start deploying VMs and containers.
+> **Notes from experience**
+> - Avoid NIC teaming unless your switch supports it properly  
+> - BIOS updates may be required for high-memory configurations  
+> - Stability is more important than peak performance  
 
 ---
 
-## **? Summary**
+## Step 2: Install Proxmox
 
-You now have a clean, powerful Proxmox node built on a tiny PC:
-**Component****Configuration**CPU20 cores (Intel i9 / Xeon variant)RAM96 GB DDR5Storage1TB NVMe (Proxmox OS & local-lvm)NetworkDual 2.5GbE bonded via LACPIP AddressStatic 10.0.0.5OSProxmox VE latest (no-sub repo)TweaksPost-install script, guest agent, updates ✅
----
+1. Write the Proxmox ISO to a USB drive  
+2. Boot from USB  
+3. Select **Install Proxmox VE**  
+4. Choose your install disk  
 
-Let me know in the comments or by DM if you’d like a follow-up post on:
+Proxmox will create:
 
-- Creating a TrueNAS VM with NVMe passthrough
-- Hosting VMs and LXCs on a ZFS pool
-- Installing a pfSense or OPNsense firewall VM
-
-Happy homelabbing! ??‍?
+- `local` — for ISOs, templates, backups  
+- `local-lvm` — for VM disks  
 
 ---
 
-Would you like me to generate a diagram for this setup too?
+**Filesystem choice**
+
+Use `ext4` for the OS disk.
+
+ZFS is powerful, but the additional overhead is better reserved for dedicated storage volumes rather than the host OS.
+
+---
+
+**Networking**
+
+Assign a **static IP** outside your DHCP range.
+
+---
+
+> **Lesson learned**  
+> I initially installed Proxmox on a 2TB NVMe. Most of that space was unused. A 512GB drive is typically more than enough for the OS and base storage.
+
+---
+
+At this point, you should be able to access the Proxmox web interface:
+
+https://:8006
+
+---
+
+## Step 3: Microcode Updates (13th Gen Intel)
+
+On newer Intel CPUs, install microcode updates immediately to prevent instability.
+
+```bash
+echo "deb http://ftp.debian.org/debian bookworm main contrib non-free-firmware" > /etc/apt/sources.list.d/non-free-firmware.list
+apt update && apt install -y intel-microcode
+reboot
+```
+Verify:
+```bash
+grep microcode /proc/cpuinfo | head -1
+```
+
+⸻
+
+## Step 4: Switch to Community Repositories
+```bash
+echo "deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription" > /etc/apt/sources.list.d/pve-no-sub.list
+sed -i 's/^deb/#deb/' /etc/apt/sources.list.d/pve-enterprise.list
+
+apt update && apt full-upgrade -y
+reboot
+```
+
+
+⸻
+
+## Step 5: Post-Install Script
+```bash
+curl -sL https://github.com/tteck/Proxmox/raw/main/misc/post-pve-install.sh | bash
+```
+This script handles common setup tasks and removes unnecessary friction.
+
+⸻
+
+## Step 6: Final Setup
+
+Install useful tools:
+```bash
+apt install -y htop nvme-cli smartmontools
+```
+Enable QEMU Guest Agent by default:
+
+Datacenter → Options → QEMU Guest Agent → Yes
+
+⸻
+
+## Step 7: Security Hardening
+
+**SSH**
+
+Switch to key-based authentication and disable password login.
+```bash
+PermitRootLogin prohibit-password
+PasswordAuthentication no
+```
+
+
+⸻
+
+**Firewall**
+
+Enable the Proxmox firewall and restrict access to your local subnet.
+
+⸻
+
+**User management**
+
+Create a non-root administrative account for better control and auditing.
+
+⸻
+
+## Step 8: Drive Health Baseline
+
+Capture SMART data for all drives before deploying workloads.
+```bash
+smartctl -a /dev/nvme0
+```
+
+⸻
+
+**Why this matters**
+Establishing a baseline makes it much easier to detect degradation later.
+
+⸻
+
+## Step 9: Email Alerts
+
+Configure a mail relay so the system can notify you of failures.
+
+Most homelab setups use a Gmail relay with an app password.
+
+⸻
+
+## Step 10: Network Planning
+
+Enable VLAN awareness early to avoid rework later.
+```bash
+bridge-vlan-aware yes
+```
+
+⸻
+
+**Design principle**
+Separate traffic logically (management, LAN, IoT, services) even if everything runs on the same hardware.
+
+⸻
+
+**What I’d Do Differently**
+	•	Use a smaller OS disk (512GB)
+	•	Use ZFS for data, not the OS
+	•	Avoid NIC teaming in a homelab
+	•	Plan storage and workloads before deployment
+
+⸻
+
+**You’re Ready**
+
+At this point, you have a stable and hardened Proxmox host ready for workloads.
+
+The system is:
+	•	accessible
+	•	monitored
+	•	secured
+	•	ready to scale
+
+⸻
+
+### What’s Next: Backups
+
+Before deploying anything, configure backups.
+
+**Next step**
+> → [Proxmox Backup Strategy — Protecting Your Homelab with PBS](/posts/proxmox-03-backup-server)
+
+⸻
+
+Built on Minisforum MS-01 · Intel i9-13900H · Proxmox VE
+
