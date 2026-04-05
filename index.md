@@ -4,79 +4,138 @@ title: Home
 permalink: /
 toc: true
 ---
-# Building a Modern Homelab
 
-> From a single Debian laptop in 2000… to a production-style Talos Kubernetes cluster.
+# Homelab
 
-This site documents the journey — the wins, the mistakes, and the lessons learned along the way.
+> From a single Debian laptop in 2000 to a production-style Kubernetes platform.
 
-## Why this site exists
+This site documents the evolution of my homelab — not just what I built, but how and why decisions were made along the way.
 
-I’ve been running some form of homelab for over 20 years — starting with an old compaq laptop running Debian.
+---
 
-Over time I’ve explored:
+## Overview
 
-- Raspberry Pi setups  
-- Docker and Docker Swarm  
-- k3s Kubernetes  
+I’ve always been drawn to understanding how things work.
 
-In 2024, I shifted toward a more production-style approach and clustering.
+The challenge is that most environments don’t allow for experimentation. Over time, I’ve come to believe that the only effective way to learn is to build systems, test them, break them, and rebuild until the solution becomes simple and reliable.
 
-This site captures that evolution. > 🚧 Currently focused on: Talos Kubernetes
+This site is a record of that process.
+
+---
+
+## Architecture and Approach
+
+Containerization provides the foundation — separating workloads and making better use of limited hardware.
+
+From there, clustering introduces resilience and flexibility.
+
+The goal is not just to run services, but to build a system that behaves more like a small-scale production environment. Technologies like Proxmox and Kubernetes make that possible, even within the constraints of a homelab.
+
+---
+
+## Prerequisites
+
+You don’t need to be an expert, but you should be comfortable with:
+
+- The Linux command line  
+- Container-based workloads (Docker or similar)  
+- Using a GitHub repository to manage configuration  
+- Running a small machine with more memory than you initially think you need  
 
 ---
 
 ## Choose your path
 
-### 🧱 Infrastructure
+Each series represents a stage in the evolution of this homelab. You can follow them sequentially or focus on a specific area of interest.
 
-Build the foundation of your homelab:
+---
+
+### Infrastructure
+
+This is the foundation everything else builds on.
+
+Topics include:
 
 - Proxmox virtualization  
 - Storage (TrueNAS, NFS, Longhorn)  
 - Networking and DNS  
 
-👉 **[Start the Infrastructure Series](/tags/series-infrastructure/)**
+>**[Start the Infrastructure Series](/tags/series-infrastructure/)**
+{.is-info}
 
-### 🐳 Docker Swarm
-
-My first step into container orchestration.
-
-👉 **[Follow the Swarm Series](/tags/series-swarm/)**
-
-### ☸️ k3s Kubernetes
-
-A lightweight Kubernetes distribution and stepping stone to Talos.
-
-👉 **[Explore the k3s Series](/tags/series-k3s/)**
-
-### ⚡ Talos Kubernetes
-
-A fully immutable, production-style Kubernetes platform.
-
-👉 **[Start the Talos Series](/tags/series-talos/)**
-
-### 🧠 Process & ITSM
-
-How I think about managing systems, not just building them.
-
-👉 **[Read the ITSM Series](/tags/series-itsm/)**
 
 ---
+
+### Docker Swarm
+
+A lightweight introduction to container orchestration.
+
+This stage focuses on understanding how distributed workloads behave, including scheduling, networking, and service management.
+
+>**[Follow the Swarm Series](/tags/series-swarm/)**
+{.is-info}
+
+
+---
+
+### k3s Kubernetes
+
+A practical entry point into Kubernetes.
+
+k3s runs well on modest hardware and provides a solid platform for learning how a cluster operates in a real environment.
+
+>**[Explore the k3s Series](/tags/series-k3s/)**
+{.is-info}
+
+
+---
+
+### Talos Kubernetes
+
+A more opinionated and production-aligned Kubernetes platform.
+
+With Talos, the operating system becomes part of the platform rather than something managed directly. This is where the homelab begins to feel like a cohesive system.
+
+>**[Start the Talos Series](/tags/series-talos/)**
+{.is-info}
+
+
+
+---
+
+### Process and ITSM
+
+Building systems is only part of the equation.
+
+This series focuses on how systems are managed, documented, and maintained over time.
+
+>Read the ITSM Series
+{.is-success}
+
+
+
+---
+
 ## What you’ll find here
 
-This isn’t just documentation.
+This is not just a collection of tutorials.
 
-It’s:
+It is a record of:
+
 - design decisions  
-- mistakes and tradeoffs  
+- tradeoffs and mistakes  
 - real-world constraints  
 - what I would do differently  
 
-If you're building your own homelab, this should save you time (and frustration).
+If you are building your own homelab, the goal is to provide clarity and save time through practical experience.
+
+---
 
 ## Start here
 
-If you're new, begin with:
+If you’re new, begin with:
 
-👉 **[Building a Proxmox Host](/posts/proxmox-01-host/)**
+>**[Building a Proxmox Host](/tags/proxmox)
+{.is-success}
+
+
