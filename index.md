@@ -99,7 +99,6 @@ With Talos, the operating system becomes part of the platform rather than someth
 
 
 
-
 ---
 
 ### Process and ITSM
