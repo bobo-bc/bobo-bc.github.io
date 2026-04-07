@@ -1,5 +1,7 @@
 ---
-layout: page
+---
+layout: home
+# Index page
 title: Home
 permalink: /
 toc: true
