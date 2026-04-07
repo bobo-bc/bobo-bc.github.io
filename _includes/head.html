@@ -98,8 +98,7 @@
   <!-- 3rd-party Dependencies -->
 
   {% if site.toc and page.toc %}
-    <link rel="stylesheet" href="{{ '/assets/css/custom-styles.css' | relative_url }}">
-   # <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
+    <link rel="stylesheet" href="{{ site.data.origin[type].toc.css | relative_url }}">
   {% endif %}
 
   {% if page.layout == 'post' or page.layout == 'page' or page.layout == 'home' %}
@@ -137,4 +136,5 @@
   {% endif %}
 
   {% include metadata-hook.html %}
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
