@@ -4,15 +4,16 @@ layout: page
 permalink: /homelab/infrastructure/
 ---
 
-## Infrastructure Series
+{% assign docs = site.homelab | where: "series", "infrastructure" | sort: "order" %}
 
-{% assign docs = site.homelab 
-  | where: "series", "infrastructure" 
-  | sort: "order" %}
-
-{% for doc in docs %}
-### {{ forloop.index }}. [{{ doc.title }}]({{ doc.url }})
-
-{{ doc.excerpt }}
-
-{% endfor %}
+<div class="series-index">
+  {% for doc in docs %}
+  <div class="series-card">
+    <span class="series-order">{{ forloop.index }}</span>
+    <div class="series-card-content">
+      <a href="{{ doc.url }}"><h4>{{ doc.title }}</h4></a>
+      {% if doc.excerpt %}<p>{{ doc.excerpt }}</p>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
