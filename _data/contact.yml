@@ -13,6 +13,23 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+- name: Homelab
+  url: /homelab/
+
+- name: Infrastructure
+  url: /homelab/infrastructure/
+
+- name: Docker Swarm
+  url: /homelab/docker-swarm/
+
+- name: K3s
+  url: /homelab/k3s/
+
+- name: Talos
+  url: /homelab/talos/
+
+- name: ITSM
+  url: /homelab/itsm/
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
