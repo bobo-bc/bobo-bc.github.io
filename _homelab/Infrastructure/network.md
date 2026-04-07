@@ -3,8 +3,7 @@ title: Configure Network for homelab
 layout: homelab
 series: infrastructure
 order: 3
-tags: [series-infrastructure, network]
-categories: [homelab]
+
 ---
 # Building a Home Network for Your Homelab
 

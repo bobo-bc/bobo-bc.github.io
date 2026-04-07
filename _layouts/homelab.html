@@ -1,10 +1,9 @@
 ---
-layout: post
+layout: default
 ---
-<p style="font-size:0.9em; opacity:0.7;">
-  <a href="/homelab/">Homelab</a> → 
-  <a href="/homelab/{{ page.series }}/">{{ page.series | capitalize }}</a>
-</p>
+
+{% include series-nav.html %}
+
 {{ content }}
 
-{% include homelab-navigation.html %}
+{% include series-nav.html %}

@@ -5,3 +5,26 @@ hr {
   border-top: 2px solid #6b7280 !important; // neutral grey
   margin: 2.5rem 0 !important;
 }
+.series-nav {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+
+  h4 { margin-top: 0; }
+
+  ol { padding-left: 1.2rem; margin: 0; }
+
+  li.active { font-weight: bold; }
+}
+
+.series-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+
+  .next { margin-left: auto; }
+}
