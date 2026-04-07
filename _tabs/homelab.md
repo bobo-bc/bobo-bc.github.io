@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Homelab
+title: Infrastructure-series
 icon: fas fa-server
 order: 5
-permalink: /homelab/
+permalink: /homelab/infrastructure/
 ---
