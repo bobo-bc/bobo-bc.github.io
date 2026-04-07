@@ -14,25 +14,3 @@
     {% endfor %}
   </ol>
 </div>
-
-{% assign sorted = series_posts %}
-{% assign current_index = nil %}
-{% for post in sorted %}
-  {% if post.url == page.url %}
-    {% assign current_index = forloop.index0 %}
-  {% endif %}
-{% endfor %}
-
-{% assign prev_index = current_index | minus: 1 %}
-{% assign next_index = current_index | plus: 1 %}
-
-<div class="series-pagination">
-  {% if current_index > 0 %}
-    {% assign prev_post = sorted[prev_index] %}
-    <a class="prev" href="{{ prev_post.url | relative_url }}">← {{ prev_post.title }}</a>
-  {% endif %}
-  {% if next_index < sorted.size %}
-    {% assign next_post = sorted[next_index] %}
-    <a class="next" href="{{ next_post.url | relative_url }}">{{ next_post.title }} →</a>
-  {% endif %}
-</div>
