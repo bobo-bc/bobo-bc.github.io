@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Infrastructure-series
+title: Infrastructure Series
 icon: fas fa-server
 order: 5
 permalink: /homelab/infrastructure/
@@ -8,7 +8,7 @@ permalink: /homelab/infrastructure/
 
 {% assign docs = site.homelab | where: "series", "infrastructure" | sort: "order" %}
 
-| #                     | Post                |
-| --------------------- | ------------------- |
-| {% for doc in docs %} | {{ forloop.index }} | [{{ doc.title }}]({{ doc.url }}) |
+| # | Post |
+|---|------|
+{% for doc in docs %}| {{ forloop.index }} | [{{ doc.title }}]({{ doc.url }}) |
 {% endfor %}
