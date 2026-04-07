@@ -166,12 +166,9 @@ kramdown:
       start_line: 1
 
 collections:
-  tabs:
+  homelab:
     output: true
-    sort_by: order
-  swarm:
-    output: true
-    permalink: /swarm/:name/
+    permalink: /homelab/:path/
 
 defaults:
   - scope:

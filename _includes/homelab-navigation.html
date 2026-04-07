@@ -1,0 +1,30 @@
+{% assign docs = site.homelab
+  | where: "series", page.series
+  | sort: "order" %}
+
+{% for doc in docs %}
+  {% if doc.url == page.url %}
+    {% assign index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% assign prev = docs[index | minus: 1] %}
+{% assign next = docs[index | plus: 1] %}
+
+<hr>
+
+<div class="post-navigation">
+
+  {% if prev %}
+    <a href="{{ prev.url }}">← {{ prev.title }}</a>
+  {% endif %}
+
+  {% if next %}
+    <a href="{{ next.url }}" style="float:right">{{ next.title }} →</a>
+  {% endif %}
+
+</div>
+
+<p style="text-align:center; font-size:0.9em; opacity:0.7;">
+  Part {{ index | plus: 1 }} of {{ docs.size }}
+</p>

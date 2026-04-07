@@ -1,7 +1,8 @@
 ---
 title: Build a Proxmox Host
-date_published: 2025-05-05T23:43:18.000Z
-date_updated: 2025-05-05T23:43:18.000Z
+layout: homelab
+series: infrastructure
+order: 1
 tags: [series-infrastructure, proxmox, virtualization]
 categories: [homelab]
 ---

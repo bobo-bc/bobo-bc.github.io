@@ -1,7 +1,8 @@
 ---
 title: Configure Network for homelab
-date_published: 2026-04-06T23:43:18.000Z
-date_updated: 2026-04-06T23:43:18.000Z
+layout: homelab
+series: infrastructure
+order: 3
 tags: [series-infrastructure, network]
 categories: [homelab]
 ---
