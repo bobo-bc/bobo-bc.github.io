@@ -107,7 +107,7 @@ Building systems is only part of the equation.
 
 This series focuses on how systems are managed, documented, and maintained over time.
 
->[Read the ITSM Series]9/homelab/itsm)
+>[Read the ITSM Series](/homelab/itsm/)
 
 
 
