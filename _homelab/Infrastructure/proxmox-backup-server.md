@@ -349,6 +349,3 @@ It's worth doing a **dry run of this scenario** before you actually need it. Res
 
 Two PBS instances, one sync job, and you have a homelab backup solution that would cost thousands in enterprise hardware replicated for the price of a Raspberry Pi and a couple of M.2 drives.
 
----
-
-*Next up: [configuring Unifi for vlans & rules, and DNS](/posts/network)

@@ -454,7 +454,7 @@ At this point you have a stable, hardened Proxmox host ready for workloads. SSH 
 
 Before you deploy your first VM or LXC, set up backups. Proxmox Backup Server (PBS) supports incremental backups, deduplication, and encryption — and integrates directly with the Proxmox UI. It takes less than an hour to configure and will save you enormously when something goes wrong.
 
-**→ Read the next article: [Homelab Backup Strategy — Protecting Your Proxmox Host with PBS](/posts/proxmox-03-backup-server)**
+
 
 
 

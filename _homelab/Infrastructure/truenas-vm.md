@@ -180,26 +180,4 @@ On a Linux client or another Proxmox host, run:
 
 If it mounts successfully, congrats—you’ve got a working NFS server powered by virtualized TrueNAS!
 
----
 
-## **Summary**
-
-You now have:
-
-- A **TrueNAS VM** running in **Proxmox VE**
-- **3 vCPUs**, **14GB RAM**, and **16GB** OS disk
-- Two **2TB NVMe SSDs** passed through as raw disks
-- **ZFS mirrored pool** for redundancy
-- **Static IP**: 10.0.0.3
-- **NFS share** available to your LAN
-
-This setup is ideal for:
-
-- Hosting Proxmox VM backups
-- Serving files to your home network
-- Running iSCSI or SMB shares in the future
-- Experimenting with ZFS snapshots and replication
-
----
-
-Let me know if you’d like help turning this into a downloadable PDF, adding screenshots, or creating a diagram for the architecture!
