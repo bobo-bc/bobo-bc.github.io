@@ -60,7 +60,7 @@ Topics include:
 - Storage (TrueNAS, NFS, Longhorn)  
 - Networking and DNS  
 
-#> [Start the Infrastructure Series](homelab/infrastructure/)
+> Start the Infrastructure Series
 
 
 ---
