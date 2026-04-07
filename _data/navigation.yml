@@ -15,3 +15,7 @@
 
 - name: ITSM
   url: /homelab/itsm/
+  
+- title: Homelab
+  url: /homelab/infrastructure/
+  icon: fas fa-server
