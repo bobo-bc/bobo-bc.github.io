@@ -1,16 +1,14 @@
-{% assign series_posts = site.homelab | where: "series", page.series | sort: "order" %}
+---
+layout: page
+title: Infrastructure Series
+icon: fas fa-server
+order: 5
+permalink: /homelab/infrastructure/
+---
 
-<div class="series-nav">
-  <h4>Series: {{ page.series | capitalize }}</h4>
-  <ol>
-    {% for post in series_posts %}
-      <li {% if post.url == page.url %}class="active"{% endif %}>
-        {% if post.url == page.url %}
-          <strong>{{ post.title }}</strong>
-        {% else %}
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ol>
-</div>
+{% assign docs = site.homelab | where: "series", "infrastructure" | sort: "order" %}
+
+| # | Post |
+|---|------|
+{% for doc in docs %}| {{ forloop.index }} | [{{ doc.title }}]({{ doc.url }}) |
+{% endfor %}
