@@ -26,5 +26,16 @@ hr {
   padding-top: 1rem;
   border-top: 1px solid var(--border-color);
 
-  .next { margin-left: auto; }
+  a {
+    max-width: 45%;
+  }
+
+  .prev {
+    text-align: left;
+  }
+
+  .next {
+    text-align: right;
+    margin-left: auto;
+  }
 }
