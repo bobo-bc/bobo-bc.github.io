@@ -171,6 +171,9 @@ kramdown:
       start_line: 1
 
 collections:
+  tabs:
+    output: true
+    sort_by: order
   homelab:
     output: true
     permalink: /homelab/:path/
@@ -191,7 +194,7 @@ defaults:
     values:
       comments: false
   - scope:
-      path: ""
+      path: " "
       type: tabs # see `site.collections`
     values:
       layout: page
