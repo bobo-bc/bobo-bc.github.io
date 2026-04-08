@@ -22,8 +22,8 @@ hr {
   li.active { font-weight: bold; }
 }
 .series-pagination {
-  display: flex;
-  justify-content: space-between;
+  display: flex !important;
+  justify-content: space-between !important;
   align-items: center;
   margin-top: 2rem;
   padding-top: 1rem;

@@ -4,7 +4,6 @@ panel_includes:
   - toc
 tail_includes:
   - related-posts
-  - post-nav
 script_includes:
   - comment
 ---
@@ -25,8 +24,6 @@ script_includes:
     {{ content }}
   </div>
 
-  <div class="post-tail-wrapper text-muted">
-    {% include series-pagination.html %}
-  </div>
+  {% include series-pagination.html %}
 
 </article>
