@@ -18,26 +18,26 @@ hr {
 
   li.active { font-weight: bold; }
 }
-
 .series-pagination {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid var(--border-color);
 
-  a {
-    max-width: 40%;
-  }
-
-  .prev {
-    text-align: left;
+  .prev, .next {
+    max-width: 45%;
   }
 
   .next {
-    text-align: right;
     margin-left: auto;
+    text-align: right;
   }
+}
+
+
+ 
 }
 .series-index {
   display: flex;
