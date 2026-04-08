@@ -1,6 +1,6 @@
 ---
 layout: page
-title: docker Swarm Series
+title: Docker Swarm Series
 icon: fas fa-server
 order: 3
 permalink: /homelab/docker-swarm/
