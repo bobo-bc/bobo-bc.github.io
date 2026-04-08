@@ -8,7 +8,7 @@ permalink: /homelab/k3s/
 
 {% assign docs = site.homelab | where: "series", "k3s" | sort: "order" %}
 
-| #                     | Post                |
-| --------------------- | ------------------- |
-| {% for doc in docs %} | {{ forloop.index }} | [{{ doc.title }}]({{ doc.url }}) |
+| # | Post |
+|---|------|
+{% for doc in docs %}| {{ forloop.index }} | [{{ doc.title }}]({{ doc.url }}) |
 {% endfor %}
