@@ -6,7 +6,7 @@ order: 6
 permalink: /homelab/k3s/
 ---
 
-{% assign docs = site.homelab | where: "series", k3s | sort: "order" %}
+{% assign docs = site.homelab | where: "series", "k3s" | sort: "order" %}
 
 | #                     | Post                |
 | --------------------- | ------------------- |
