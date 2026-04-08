@@ -2,7 +2,7 @@
 layout: page
 title: k3s Series
 icon: fas fa-server
-order: 6
+order: 4
 permalink: /homelab/k3s/
 ---
 
