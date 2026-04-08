@@ -1,3 +1,15 @@
+{% assign series_posts = site.homelab | where: "series", page.series | sort: "order" %}
+
+{% assign current_index = nil %}
+{% for post in series_posts %}
+  {% if post.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% assign prev_index = current_index | minus: 1 %}
+{% assign next_index = current_index | plus: 1 %}
+
 <div class="series-pagination">
   {% if current_index > 0 %}
     {% assign prev_post = series_posts[prev_index] %}
