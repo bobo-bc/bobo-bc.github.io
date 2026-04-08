@@ -3,6 +3,7 @@ title: Configure Network for homelab
 layout: homelab
 series: infrastructure
 order: 3
+toc: true
 
 ---
 # Building a Home Network for Your Homelab
