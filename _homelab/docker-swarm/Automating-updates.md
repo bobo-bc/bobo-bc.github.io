@@ -1,8 +1,8 @@
 ---
 title: Shepherd- Keep Your Docker Swarm Services Up-to-Date
-date: 2025-09-11 11:40:00 +0800
-categories: [Docker]
-tags: [series-swarm]
+layout: homelab
+series: docker-swarm
+order: 7
 ---
 
 ---

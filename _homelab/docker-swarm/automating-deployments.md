@@ -1,8 +1,8 @@
 ---
 title: "Automating Docker Swarm Deployments:"
-date: 2025-09-12 11:40:00 +0800
-categories: [Docker]
-tags: [series-swarm]
+layout: homelab
+series: docker-swarm
+order: 6
 ---
 
 # Portainer and Github for Swarm CI/CD

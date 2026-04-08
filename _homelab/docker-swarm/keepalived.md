@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "KeepAlived Virtual IP"
-date: 2025-09-27 15:30:00 +0800
-categories: [Docker]
-tags: [series-swarm]
+layout: homelab
+series: docker-swarm
+order: 4
 ---
 
 # Step 2: Install and Configure Keepalived for VIP Failover

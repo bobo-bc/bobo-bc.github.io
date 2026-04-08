@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Swarm Nodes from vm template"
-date: 2025-09-29 10:30:00 +0800
-categories: [Docker]
-tags: [series-swarm]
+layout: homelab
+series: docker-swarm
+order: 2
 ---
 
 ## The Build

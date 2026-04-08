@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Infrastructure Series
+title: docker Swarm Series
 icon: fas fa-server
-order: 2
-permalink: /homelab/infrastructure/
+order: 3
+permalink: /homelab/docker-swarm/
 ---
 
-{% assign docs = site.homelab | where: "series", "infrastructure" | sort: "order" %}
+{% assign docs = site.homelab | where: "series", "docker-swarm" | sort: "order" %}
 
 | #                     | Post                |
 | --------------------- | ------------------- |
