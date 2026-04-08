@@ -5,7 +5,6 @@ series: k3s
 order: 10
 ---
 
----
 
 I had my website internally hosted within a docker swarm. for me to be successful in this cabernets set up I needed to start clean. This means deleting any existing tunnels and dns entries for the site name you want to use.
 

@@ -5,7 +5,6 @@ series: k3s
 order: 9
 ---
 
----
 
 After getting storage sorted in our Kubernetes cluster with Longhorn for application configs and NFS for media, it's time to give ourselves a powerful UI: **Portainer**.
 

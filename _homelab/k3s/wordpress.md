@@ -5,7 +5,6 @@ series: k3s
 order: 11
 ---
 
----
 
 **Goal:** Deploy a self-hosted WordPress site on your k3s cluster using:
 

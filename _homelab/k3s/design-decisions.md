@@ -3,6 +3,7 @@ title: "Building My Homelab: Design Decisions That Work"
 layout: homelab
 series: k3s
 order: 2
+---
 
 When I first set out to build my homelab, my goal was simple: create a reliable, efficient environment to run the services I rely on, while having full control over my network and infrastructure. After months of experimentation and refinement, here’s a breakdown of the key components and why I chose them.
 
