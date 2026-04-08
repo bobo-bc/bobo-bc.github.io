@@ -71,7 +71,7 @@ A lightweight introduction to container orchestration.
 
 This stage focuses on understanding how distributed workloads behave, including scheduling, networking, and service management.
 
->[Follow the Swarm Series](/homelab/docker-swarm/)
+>Follow the Swarm Series
 
 
 
@@ -83,7 +83,7 @@ A practical entry point into Kubernetes.
 
 k3s runs well on modest hardware and provides a solid platform for learning how a cluster operates in a real environment.
 
->[Explore the k3s Series](/homelab/k3s/)
+>Explore the k3s Series
 
 
 
@@ -95,7 +95,7 @@ A more opinionated and production-aligned Kubernetes platform.
 
 With Talos, the operating system becomes part of the platform rather than something managed directly. This is where the homelab begins to feel like a cohesive system.
 
->[Start the Talos Series](/homelab/talos/)
+>Start the Talos Series
 
 
 
@@ -107,7 +107,7 @@ Building systems is only part of the equation.
 
 This series focuses on how systems are managed, documented, and maintained over time.
 
->[Read the ITSM Series](/homelab/itsm/)
+>Read the ITSM Series
 
 
 
@@ -128,12 +128,6 @@ It is a record of:
 If you are building your own homelab, the goal is to provide clarity and save time through practical experience.
 
 ---
-
-## Start here
-
-If you’re new, begin with:
-
->✅ [Build a Proxmox Host](homelab/Infrastructure/proxmox-host/)
 
 
 
