@@ -53,8 +53,10 @@
 {% include jsdelivr-combine.html urls=urls %}
 
 {% case page.layout %}
-  {% when 'home', 'categories', 'post', 'page', 'homelab' %}
-    {% assign js = page.layout == 'homelab' ? 'post' : page.layout %}
+  {% when 'home', 'categories', 'post', 'page' %}
+    {% assign js = page.layout %}
+  {% when 'homelab' %}
+    {% assign js = 'post' %}
   {% when 'archives', 'category', 'tag' %}
     {% assign js = 'misc' %}
   {% else %}
