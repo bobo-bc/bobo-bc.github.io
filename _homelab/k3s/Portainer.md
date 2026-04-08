@@ -1,9 +1,8 @@
 ---
-title: "Post 7: Installing Portainer"
-date_published: 2025-05-26T21:00:00.000Z
-date_updated: 2025-06-18T18:17:02.000Z
-tags: [series-k3s]
-categories: [kubernetes]
+title: "Installing Portainer"
+layout: homelab
+series: k3s
+order: 9
 ---
 
 ---

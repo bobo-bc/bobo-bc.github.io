@@ -1,9 +1,8 @@
 ---
-title: "Post 2: Creating the machines"
-date_published: 2025-05-26T20:19:18.000Z
-date_updated: 2025-06-18T18:15:48.000Z
-tags: [series-k3s]
-categories: [kubernetes, homelab]
+title: "Creating the machines"
+layout: homelab
+series: k3s
+order: 4
 ---
 
 With the home lab vision in mind, the next step was setting up the underlying VMs that would form my Kubernetes cluster. I chose Ubuntu Server as the base OS for all nodes.

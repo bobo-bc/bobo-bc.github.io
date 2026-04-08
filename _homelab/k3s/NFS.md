@@ -1,10 +1,8 @@
 ---
-title: "Post 5: Configuring NFS Storage for Media"
-date_published: 2025-05-26T20:38:22.000Z
-date_updated: 2025-06-18T18:16:35.000Z
-tags: [series-k3s]
-categories: [kubernetes, homelab]
----
+title: "Configuring NFS Storage for Media"
+layout: homelab
+series: k3s
+order: 7
 
 In the last post, we got Longhorn set up for dynamic config storage. Now it's time to integrate NFS so our media apps can access and store large files efficiently. I’m using TrueNAS as the NFS server to serve up shared media folders to all my k3s nodes.
 

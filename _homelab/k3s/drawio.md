@@ -1,9 +1,8 @@
 ---
-title: Draw.io (Diagrams.net) on k3s
-date_published: 2025-05-27T00:07:31.000Z
-date_updated: 2025-06-18T18:18:04.000Z
-tags: [series-k3s]
-categories: [kubernetes]
+title: Draw.io (Diagrams.net)
+layout: homelab
+series: k3s
+order: 13
 ---
 
 Drawio is one of those tools I actually tend to use. It is great for flow charts, mind maps or floor design. you draw up what you need and then download via pdf.

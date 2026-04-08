@@ -1,9 +1,8 @@
 ---
-title: "Post 4: Installing Longhorn"
-date_published: 2025-05-26T20:28:02.000Z
-date_updated: 2025-06-18T18:16:20.000Z
-tags: [series-k3s]
-categories: [kubernetes]
+title: "Installing Longhorn"
+layout: homelab
+series: k3s
+order: 6
 ---
 
 In the previous post, we set up a basic k3s cluster with MetalLB to handle LoadBalancer IPs. Now it's time to enable dynamic, persistent storage using [Longhorn](https://longhorn.io/). Longhorn provides highly available storage across your Kubernetes nodes, making it perfect for configuration files for applications. Local persistent volumes are great for databases as well which struggle in NFS.

@@ -1,9 +1,8 @@
 ---
-title: "Post 8: Cloudflare Tunnel"
-date_published: 2025-05-26T21:20:00.000Z
-date_updated: 2025-06-18T18:17:24.000Z
-tags: [series-k3s]
-categories: [kubernetes]
+title: "Cloudflare Tunnel"
+layout: homelab
+series: k3s
+order: 10
 ---
 
 ---

@@ -1,9 +1,8 @@
 ---
 title: K3s Cluster Overview
-date_published: 2025-05-26T20:08:54.000Z
-date_updated: 2025-06-18T17:47:24.000Z
-tags: [series-k3s]
-categories: [kubernetes, homelab]
+layout: homelab
+series: k3s
+order: 3
 ---
 
 ## Part 1: Overview and Goals

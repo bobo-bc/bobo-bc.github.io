@@ -1,9 +1,8 @@
 ---
 title: Kubernetes Cluster
-date_published: 2025-06-12T02:37:52.000Z
-date_updated: 2025-06-18T18:38:59.000Z
-tags: [series-k3s]
-ategories: [kubernetes]
+layout: homelab
+series: k3s
+order: 1
 ---
 
 ## **Building a Kubernetes Cluster at Home**
