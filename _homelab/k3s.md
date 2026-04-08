@@ -1,10 +1,10 @@
 ---
-title: "Infrastructure"
+title: "Kunbernetes k3s"
 layout: page
 permalink: /homelab/k3s/
 ---
 
-## Infrastructure Series
+## k3s Series
 
 {% assign docs = site.homelab 
   | where: "series", "k3s" 
