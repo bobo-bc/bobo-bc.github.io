@@ -25,7 +25,7 @@ layout: compress
 
         <div class="row flex-grow-1">
           <main aria-label="Main Content" class="col-12 col-lg-11 col-xl-9 px-md-4">
-            {% if layout.layout == 'default' %}
+            {% if layout.layout == 'default' and page.layout != 'homelab' %}
               {% include refactor-content.html content=content lang=lang %}
             {% else %}
               {{ content }}
@@ -34,16 +34,16 @@ layout: compress
 
           <!-- panel -->
           <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
-  {% for _include in layout.panel_includes %}
-    {% assign _include_path = _include | append: '.html' %}
-    {% include {{ _include_path }} lang=lang %}
-  {% endfor %}
+            {% for _include in layout.panel_includes %}
+              {% assign _include_path = _include | append: '.html' %}
+              {% include {{ _include_path }} lang=lang %}
+            {% endfor %}
 
-  <div class="access">
-    {% include_cached update-list.html lang=lang %}
-    {% include_cached trending-tags.html lang=lang %}
-  </div>
-</aside>
+            <div class="access">
+              {% include_cached update-list.html lang=lang %}
+              {% include_cached trending-tags.html lang=lang %}
+            </div>
+          </aside>
         </div>
 
         <div class="row">
