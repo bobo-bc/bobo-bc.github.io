@@ -7,8 +7,7 @@ permalink: /homelab/docker-swarm/
 ---
 
 {% assign docs = site.homelab | where: "series", "docker-swarm" | sort: "order" %}
-
-| #                     | Post                |
-| --------------------- | ------------------- |
-| {% for doc in docs %} | {{ forloop.index }} | [{{ doc.title }}]({{ doc.url }}) |
+| # | Post |
+|---|------|
+{% for doc in docs %}| {{ forloop.index }} | [{{ doc.title }}]({{ doc.url }}) |
 {% endfor %}
