@@ -3,8 +3,7 @@ title: A virtualized TrueNas NFS server in Proxmox
 layout: homelab
 series: infrastructure
 order: 6
-tags: [series-infrastructure, storage, virtualization]
-categories: [homelab]
+toc: true
 ---
 
 **Published by Bobo on May 4, 2025**

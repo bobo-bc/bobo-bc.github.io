@@ -4,6 +4,7 @@ title: Docker Swarm Best Practices with Portainer
 layout: homelab
 series: docker-swarm
 order: 8
+toc: true
 ---
 
 *Published by bobo on May 5, 2025*

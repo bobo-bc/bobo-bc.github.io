@@ -3,8 +3,7 @@ title: Supercharging Your Homelab Projects
 layout: homelab
 series: infrastructure
 order: 7
-tags: [series-infrastructure,workstation, AI]
-categories: [homelab]
+toc: true
 ---
 
 **with ChatGPT: Design, YAML, and Troubleshooting Tips**

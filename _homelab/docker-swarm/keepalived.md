@@ -4,6 +4,7 @@ title: "KeepAlived Virtual IP"
 layout: homelab
 series: docker-swarm
 order: 4
+toc: true
 ---
 
 # Step 2: Install and Configure Keepalived for VIP Failover

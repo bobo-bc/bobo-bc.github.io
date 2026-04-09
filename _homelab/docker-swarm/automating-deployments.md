@@ -3,6 +3,7 @@ title: "Automating Docker Swarm Deployments:"
 layout: homelab
 series: docker-swarm
 order: 6
+toc: true
 ---
 
 # Portainer and Github for Swarm CI/CD

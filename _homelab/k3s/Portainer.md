@@ -3,6 +3,8 @@ title: "Installing Portainer"
 layout: homelab
 series: k3s
 order: 9
+toc: true
+
 ---
 
 

@@ -3,6 +3,7 @@ title: "Persistent Storage with Longhorn and NFS"
 layout: homelab
 series: k3s
 order: 8
+toc: true
 ---
 
 In the last post, we had our k3s cluster up and running with MetalLB set up to manage external IPs. Now, it's time to get persistent storage working for our workloads. In this post, I’ll walk through setting up **Longhorn** for application configuration storage and **NFS** for accessing existing media files.

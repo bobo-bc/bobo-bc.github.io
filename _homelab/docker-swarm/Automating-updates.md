@@ -3,6 +3,7 @@ title: Shepherd- Keep Your Docker Swarm Services Up-to-Date
 layout: homelab
 series: docker-swarm
 order: 7
+toc: true
 ---
 
 ---

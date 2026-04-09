@@ -3,8 +3,7 @@ title: Build a Proxmox Host
 layout: homelab
 series: infrastructure
 order: 1
-tags: [series-infrastructure, proxmox, virtualization]
-categories: [homelab]
+toc: true
 ---
 
 # Building Your First Proxmox Homelab Server

@@ -3,6 +3,7 @@ title: Kubernetes Cluster
 layout: homelab
 series: k3s
 order: 1
+toc: true
 ---
 
 ## **Building a Kubernetes Cluster at Home**

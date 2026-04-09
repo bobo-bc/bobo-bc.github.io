@@ -3,8 +3,7 @@ title: ssh auto login
 layout: homelab
 series: infrastructure
 order: 5
-tags: [series-infrastructure, workstation, ssh]
-categories: [homelab]
+toc: true
 ---
 
 When building a homelab you spend a lot of time in terminal.  A super simple way of connecting to your remote system is ssh but can be repetitive to authenticate all the time.

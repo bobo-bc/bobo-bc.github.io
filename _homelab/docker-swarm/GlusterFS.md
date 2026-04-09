@@ -4,6 +4,7 @@ title: "GlusterFS"
 layout: homelab
 series: docker-swarm
 order: 5
+toc: true
 ---
 
 ##Install and Configure GlusterFS for Distributed Storage

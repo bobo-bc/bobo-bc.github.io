@@ -4,6 +4,7 @@ title: "Swarm install"
 layout: homelab
 series: docker-swarm
 order: 3
+toc: true
 
 ---
 

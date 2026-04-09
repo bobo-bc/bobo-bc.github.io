@@ -3,6 +3,7 @@ title: "WordPress"
 layout: homelab
 series: k3s
 order: 11
+toc: true
 ---
 
 

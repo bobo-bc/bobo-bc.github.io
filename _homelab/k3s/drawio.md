@@ -3,6 +3,7 @@ title: Draw.io (Diagrams.net)
 layout: homelab
 series: k3s
 order: 13
+toc: true
 ---
 
 Drawio is one of those tools I actually tend to use. It is great for flow charts, mind maps or floor design. you draw up what you need and then download via pdf.

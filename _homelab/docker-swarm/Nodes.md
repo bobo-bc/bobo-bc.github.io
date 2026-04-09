@@ -4,6 +4,7 @@ title: "Swarm Nodes from vm template"
 layout: homelab
 series: docker-swarm
 order: 2
+toc: true
 ---
 
 ## The Build

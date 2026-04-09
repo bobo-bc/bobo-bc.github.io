@@ -3,6 +3,7 @@ title: "Installing k3s and MetalLB"
 layout: homelab
 series: k3s
 order: 5
+toc: true
 ---
 
 In the previous posts, we set the stage with hardware and VM provisioning. Now it’s time to get Kubernetes up and running. We’re using [k3s](https://k3s.io/) for its lightweight footprint and ease of use—perfect for a homelab.

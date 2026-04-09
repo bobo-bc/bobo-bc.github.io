@@ -3,6 +3,7 @@ title: "Cloudflare Tunnel"
 layout: homelab
 series: k3s
 order: 10
+toc: true
 ---
 
 

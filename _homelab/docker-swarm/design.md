@@ -4,6 +4,7 @@ title: "Docker Swarm Design"
 layout: homelab
 series: docker-swarm
 order: 1
+toc: true
 ---
 ## Intro
 This simplified guide for TuringPi cluster is less windy than the original: [rip4cluster](https://rpi4cluster.com/docker-swarm-intro). I mostly wrote this to ensure my own copy of the procedure in case the origional ever got retired off the internet.  I have made a few very minor changes just for my own clarity. 

@@ -3,6 +3,7 @@ title: K3s Cluster Overview
 layout: homelab
 series: k3s
 order: 3
+toc: true
 ---
 
 ## Part 1: Overview and Goals

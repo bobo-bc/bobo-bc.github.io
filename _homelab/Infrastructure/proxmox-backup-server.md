@@ -3,8 +3,7 @@ title: Build a Proxmox backup server
 layout: homelab
 series: infrastructure
 order: 2
-tags: [series-infrastructure, proxmox, virtualization]
-categories: [homelab]
+toc: true
 ---
 # Homelab Backup Strategy: Protecting Your Proxmox Host with PBS
 

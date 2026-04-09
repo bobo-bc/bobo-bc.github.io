@@ -3,6 +3,7 @@ title: Monitoring and Performance
 layout: homelab
 series: k3s
 order: 12
+toc: true
 ---
 
 **with Prometheus, Grafana, and Homarr**
