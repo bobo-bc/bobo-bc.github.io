@@ -1,8 +1,10 @@
 {% assign series_posts = site.homelab | where: "series", page.series | sort: "order" %}
 
 {% assign current_index = nil %}
+{% assign page_url = page.url | remove_trailing_slash %}
 {% for post in series_posts %}
-  {% if post.url == page.url %}
+  {% assign post_url = post.url | remove_trailing_slash %}
+  {% if post_url == page_url %}
     {% assign current_index = forloop.index0 %}
   {% endif %}
 {% endfor %}
