@@ -34,7 +34,7 @@ Here’s the structure I use at home:
 
 At a high level, internet traffic flows like this:
 
-```
+``` bash
 ISP Modem → Gateway → VLANs → Your Devices
 ```
 My ISP requires their modem to stay in place (it handles both internet and TV), so it lives at 192.168.0.1. My gateway sits behind it and handles everything inside the network.
